@@ -14,7 +14,7 @@ class AppTextStyles {
   );
 
   /// Headline 01 Serif
-  static const TextStyle headline_01 = TextStyle(
+  static const TextStyle headline01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 48,
     fontWeight: FontWeight.w700,
@@ -25,7 +25,7 @@ class AppTextStyles {
   );
 
   /// HeadlineSans 01
-  static const TextStyle headlinesans_01 = TextStyle(
+  static const TextStyle headlinesans01 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 48,
     fontWeight: FontWeight.w700,
@@ -36,7 +36,7 @@ class AppTextStyles {
   );
 
   /// Headline 02 Serif
-  static const TextStyle headline_02 = TextStyle(
+  static const TextStyle headline02 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 36,
     fontWeight: FontWeight.w700,
@@ -47,7 +47,7 @@ class AppTextStyles {
   );
 
   /// Headline 03
-  static const TextStyle headline_03 = TextStyle(
+  static const TextStyle headline03 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 24,
     fontWeight: FontWeight.w700,
@@ -58,7 +58,7 @@ class AppTextStyles {
   );
 
   /// HeadlineSans 03
-  static const TextStyle headlinesans_03 = TextStyle(
+  static const TextStyle headlinesans03 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 24,
     fontWeight: FontWeight.w700,
@@ -69,7 +69,7 @@ class AppTextStyles {
   );
 
   /// Large body 01
-  static const TextStyle large_body_01 = TextStyle(
+  static const TextStyle largebody01 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 20,
     fontWeight: FontWeight.w400,
@@ -80,7 +80,7 @@ class AppTextStyles {
   );
 
   /// Large body serif 01
-  static const TextStyle large_body_serif_01 = TextStyle(
+  static const TextStyle largebodyserif01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w400,
@@ -91,7 +91,7 @@ class AppTextStyles {
   );
 
   /// Regular Body 01
-  static const TextStyle regular_body_01 = TextStyle(
+  static const TextStyle regularbody01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -102,7 +102,7 @@ class AppTextStyles {
   );
 
   /// Regular Body serif 01
-  static const TextStyle regular_body_serif_01 = TextStyle(
+  static const TextStyle regularbodyserif01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 16,
     fontWeight: FontWeight.w700,
@@ -113,7 +113,7 @@ class AppTextStyles {
   );
 
   /// Small Body 02
-  static const TextStyle small_body_02 = TextStyle(
+  static const TextStyle smallbody02 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -124,7 +124,7 @@ class AppTextStyles {
   );
 
   /// Small Body serif 02
-  static const TextStyle small_body_serif_02 = TextStyle(
+  static const TextStyle smallbodyserif02 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -135,7 +135,7 @@ class AppTextStyles {
   );
 
   /// Mention text
-  static const TextStyle mention_text = TextStyle(
+  static const TextStyle mentiontext = TextStyle(
     fontFamily: 'Arial',
     fontSize: 12,
     fontWeight: FontWeight.w700,
@@ -146,7 +146,7 @@ class AppTextStyles {
   );
 
   /// Navbar
-  static const TextStyle small_nav_01 = TextStyle(
+  static const TextStyle smallnav01 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 10,
     fontWeight: FontWeight.w400,
@@ -157,7 +157,7 @@ class AppTextStyles {
   );
 
   /// Italic/Bold Body 01
-  static const TextStyle italic_body_01 = TextStyle(
+  static const TextStyle italicbody01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w400,
@@ -168,7 +168,7 @@ class AppTextStyles {
   );
 
   /// ItalicBold Body 01
-  static const TextStyle italicbold_body_01 = TextStyle(
+  static const TextStyle italicboldbody01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -179,7 +179,7 @@ class AppTextStyles {
   );
 
   /// Bold Body 01
-  static const TextStyle bold_body_01 = TextStyle(
+  static const TextStyle boldbody01 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -190,7 +190,7 @@ class AppTextStyles {
   );
 
   /// Headline 04
-  static const TextStyle headline_04 = TextStyle(
+  static const TextStyle headline04 = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -201,7 +201,7 @@ class AppTextStyles {
   );
 
   /// HeadlineSans 04
-  static const TextStyle headlinesans_04 = TextStyle(
+  static const TextStyle headlinesans04 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 20,
     fontWeight: FontWeight.w700,
@@ -211,7 +211,7 @@ class AppTextStyles {
     decoration: TextDecoration.none,
   );
 
-  static const TextStyle small_body_02_bold = TextStyle(
+  static const TextStyle smallbody02bold = TextStyle(
     fontFamily: 'Arial',
     fontSize: 14,
     fontWeight: FontWeight.w700,
@@ -221,7 +221,7 @@ class AppTextStyles {
     decoration: TextDecoration.none,
   );
 
-  static const TextStyle small_body_02_bold_underline = TextStyle(
+  static const TextStyle smallbody2boldunderline = TextStyle(
     fontFamily: 'Arial',
     fontSize: 14,
     fontWeight: FontWeight.w700,
@@ -231,7 +231,7 @@ class AppTextStyles {
     decoration: TextDecoration.underline,
   );
 
-  static const TextStyle small_nav_bold_01 = TextStyle(
+  static const TextStyle smallnavbold01 = TextStyle(
     fontFamily: 'Arial',
     fontSize: 10,
     fontWeight: FontWeight.w700,
@@ -241,8 +241,18 @@ class AppTextStyles {
     decoration: TextDecoration.none,
   );
 
+  static const TextStyle details8 = TextStyle(
+    fontFamily: 'Arial',
+    fontSize: 8,
+    fontWeight: FontWeight.w400,
+    fontStyle: FontStyle.normal,
+    letterSpacing: 0,
+    height: 1.25, // lineHeight divided by fontSize for Flutter
+    decoration: TextDecoration.none,
+  );
+
   /// Headline 01
-  static const TextStyle heading_large = TextStyle(
+  static const TextStyle headinglarge = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 36,
     fontWeight: FontWeight.w700,
@@ -253,7 +263,7 @@ class AppTextStyles {
   );
 
   /// Headline Sans 01
-  static const TextStyle heading_large_sans = TextStyle(
+  static const TextStyle headinglargesans = TextStyle(
     fontFamily: 'Arial',
     fontSize: 36,
     fontWeight: FontWeight.w700,
@@ -264,7 +274,7 @@ class AppTextStyles {
   );
 
   /// Headline 02
-  static const TextStyle heading_medium = TextStyle(
+  static const TextStyle headingmedium = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 36,
     fontWeight: FontWeight.w700,
@@ -275,7 +285,7 @@ class AppTextStyles {
   );
 
   /// Headline Sans 02
-  static const TextStyle heading_medium_sans = TextStyle(
+  static const TextStyle headingmediumsans = TextStyle(
     fontFamily: 'Arial',
     fontSize: 30,
     fontWeight: FontWeight.w700,
@@ -286,7 +296,7 @@ class AppTextStyles {
   );
 
   /// Headline 03
-  static const TextStyle heading_small = TextStyle(
+  static const TextStyle headingsmall = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 18,
     fontWeight: FontWeight.w700,
@@ -297,7 +307,7 @@ class AppTextStyles {
   );
 
   /// HeadlineSans 03
-  static const TextStyle heading_small_sans = TextStyle(
+  static const TextStyle headingsmallsans = TextStyle(
     fontFamily: 'Arial',
     fontSize: 18,
     fontWeight: FontWeight.w700,
@@ -308,7 +318,7 @@ class AppTextStyles {
   );
 
   /// Large body 01
-  static const TextStyle body_large = TextStyle(
+  static const TextStyle bodylarge = TextStyle(
     fontFamily: 'Arial',
     fontSize: 16,
     fontWeight: FontWeight.w400,
@@ -319,7 +329,7 @@ class AppTextStyles {
   );
 
   /// Large body serif
-  static const TextStyle body_large_serif = TextStyle(
+  static const TextStyle bodylargeserif = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 16,
     fontWeight: FontWeight.w400,
@@ -330,7 +340,7 @@ class AppTextStyles {
   );
 
   /// Regular body 01
-  static const TextStyle body_regular = TextStyle(
+  static const TextStyle bodyregular = TextStyle(
     fontFamily: 'Arial',
     fontSize: 14,
     fontWeight: FontWeight.w700,
@@ -341,7 +351,7 @@ class AppTextStyles {
   );
 
   /// Small body 02
-  static const TextStyle body_small = TextStyle(
+  static const TextStyle bodysmall = TextStyle(
     fontFamily: 'Arial',
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -352,7 +362,7 @@ class AppTextStyles {
   );
 
   /// Regular body serif 01
-  static const TextStyle body_regular_serif = TextStyle(
+  static const TextStyle bodyregularserif = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 14,
     fontWeight: FontWeight.w700,
@@ -363,7 +373,7 @@ class AppTextStyles {
   );
 
   /// Small body serif 02
-  static const TextStyle body_small_serif = TextStyle(
+  static const TextStyle bodysmallserif = TextStyle(
     fontFamily: 'Georgia',
     fontSize: 14,
     fontWeight: FontWeight.w400,
@@ -374,7 +384,7 @@ class AppTextStyles {
   );
 
   /// MENTION TEXT
-  static const TextStyle mention_text = TextStyle(
+  static const TextStyle mentiontext = TextStyle(
     fontFamily: 'Arial',
     fontSize: 12,
     fontWeight: FontWeight.w700,

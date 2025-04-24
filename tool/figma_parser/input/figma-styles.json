@@ -1,6 +1,6 @@
 {
   "font": {
-    "headline 01": {
+    "headline01": {
       "description": "Headline 01 Serif",
       "type": "custom-fontStyle",
       "value": {
@@ -23,7 +23,7 @@
         }
       }
     },
-    "headlinesans 01": {
+    "headlinesans01": {
       "description": "HeadlineSans 01",
       "type": "custom-fontStyle",
       "value": {
@@ -46,7 +46,7 @@
         }
       }
     },
-    "headline 02": {
+    "headline02": {
       "description": "Headline 02 Serif",
       "type": "custom-fontStyle",
       "value": {
@@ -69,7 +69,7 @@
         }
       }
     },
-    "headline 03": {
+    "headline03": {
       "description": "Headline 03",
       "type": "custom-fontStyle",
       "value": {
@@ -92,7 +92,7 @@
         }
       }
     },
-    "headlinesans 03": {
+    "headlinesans03": {
       "description": "HeadlineSans 03",
       "type": "custom-fontStyle",
       "value": {
@@ -115,7 +115,7 @@
         }
       }
     },
-    "large body 01": {
+    "largebody01": {
       "description": "Large body 01",
       "type": "custom-fontStyle",
       "value": {
@@ -138,7 +138,7 @@
         }
       }
     },
-    "large body serif 01": {
+    "largebodyserif01": {
       "description": "Large body serif 01",
       "type": "custom-fontStyle",
       "value": {
@@ -161,7 +161,7 @@
         }
       }
     },
-    "regular body 01": {
+    "regularbody01": {
       "description": "Regular Body 01",
       "type": "custom-fontStyle",
       "value": {
@@ -184,7 +184,7 @@
         }
       }
     },
-    "regular body serif 01": {
+    "regularbodyserif01": {
       "description": "Regular Body serif 01",
       "type": "custom-fontStyle",
       "value": {
@@ -207,7 +207,7 @@
         }
       }
     },
-    "small body 02": {
+    "smallbody02": {
       "description": "Small Body 02",
       "type": "custom-fontStyle",
       "value": {
@@ -230,7 +230,7 @@
         }
       }
     },
-    "small body serif 02": {
+    "smallbodyserif02": {
       "description": "Small Body serif 02",
       "type": "custom-fontStyle",
       "value": {
@@ -253,7 +253,7 @@
         }
       }
     },
-    "mention text": {
+    "mentiontext": {
       "description": "Mention text",
       "type": "custom-fontStyle",
       "value": {
@@ -276,7 +276,7 @@
         }
       }
     },
-    "small nav 01": {
+    "smallnav01": {
       "description": "Navbar",
       "type": "custom-fontStyle",
       "value": {
@@ -299,7 +299,7 @@
         }
       }
     },
-    "italic body 01": {
+    "italicbody01": {
       "description": "Italic/Bold Body 01",
       "type": "custom-fontStyle",
       "value": {
@@ -322,7 +322,7 @@
         }
       }
     },
-    "italicbold body 01": {
+    "italicboldbody01": {
       "description": "ItalicBold Body 01",
       "type": "custom-fontStyle",
       "value": {
@@ -345,7 +345,7 @@
         }
       }
     },
-    "bold body 01": {
+    "boldbody01": {
       "description": "Bold Body 01",
       "type": "custom-fontStyle",
       "value": {
@@ -368,7 +368,7 @@
         }
       }
     },
-    "headline 04": {
+    "headline04": {
       "description": "Headline 04",
       "type": "custom-fontStyle",
       "value": {
@@ -391,7 +391,7 @@
         }
       }
     },
-    "headlinesans 04": {
+    "headlinesans04": {
       "description": "HeadlineSans 04",
       "type": "custom-fontStyle",
       "value": {
@@ -414,7 +414,7 @@
         }
       }
     },
-    "small body 02 bold": {
+    "smallbody02bold": {
       "type": "custom-fontStyle",
       "value": {
         "fontSize": 14,
@@ -436,7 +436,7 @@
         }
       }
     },
-    "small body 02 bold underline": {
+    "smallbody2boldunderline": {
       "type": "custom-fontStyle",
       "value": {
         "fontSize": 14,
@@ -458,7 +458,7 @@
         }
       }
     },
-    "small nav bold 01": {
+    "smallnavbold01": {
       "type": "custom-fontStyle",
       "value": {
         "fontSize": 10,
@@ -480,7 +480,7 @@
         }
       }
     },
-    "details 8": {
+    "details8": {
       "type": "custom-fontStyle",
       "value": {
         "fontSize": 8,
@@ -503,7 +503,7 @@
       }
     },
     "type": {
-      "heading-large": {
+      "headinglarge": {
         "description": "Headline 01",
         "type": "custom-fontStyle",
         "value": {
@@ -526,7 +526,7 @@
           }
         }
       },
-      "heading-large-sans": {
+      "headinglargesans": {
         "description": "Headline Sans 01",
         "type": "custom-fontStyle",
         "value": {
@@ -549,7 +549,7 @@
           }
         }
       },
-      "heading-medium": {
+      "headingmedium": {
         "description": "Headline 02",
         "type": "custom-fontStyle",
         "value": {
@@ -572,7 +572,7 @@
           }
         }
       },
-      "heading-medium-sans": {
+      "headingmediumsans": {
         "description": "Headline Sans 02",
         "type": "custom-fontStyle",
         "value": {
@@ -595,7 +595,7 @@
           }
         }
       },
-      "heading-small": {
+      "headingsmall": {
         "description": "Headline 03",
         "type": "custom-fontStyle",
         "value": {
@@ -618,7 +618,7 @@
           }
         }
       },
-      "heading-small-sans": {
+      "headingsmallsans": {
         "description": "HeadlineSans 03",
         "type": "custom-fontStyle",
         "value": {
@@ -641,7 +641,7 @@
           }
         }
       },
-      "body-large": {
+      "bodylarge": {
         "description": "Large body 01",
         "type": "custom-fontStyle",
         "value": {
@@ -664,7 +664,7 @@
           }
         }
       },
-      "body-large-serif": {
+      "bodylargeserif": {
         "description": "Large body serif",
         "type": "custom-fontStyle",
         "value": {
@@ -687,7 +687,7 @@
           }
         }
       },
-      "body-regular": {
+      "bodyregular": {
         "description": "Regular body 01",
         "type": "custom-fontStyle",
         "value": {
@@ -710,7 +710,7 @@
           }
         }
       },
-      "body-small": {
+      "bodysmall": {
         "description": "Small body 02",
         "type": "custom-fontStyle",
         "value": {
@@ -733,7 +733,7 @@
           }
         }
       },
-      "body-regular-serif": {
+      "bodyregularserif": {
         "description": "Regular body serif 01",
         "type": "custom-fontStyle",
         "value": {
@@ -756,7 +756,7 @@
           }
         }
       },
-      "body-small-serif": {
+      "bodysmallserif": {
         "description": "Small body serif 02",
         "type": "custom-fontStyle",
         "value": {
@@ -779,7 +779,7 @@
           }
         }
       },
-      "mention-text": {
+      "mentiontext": {
         "description": "MENTION TEXT",
         "type": "custom-fontStyle",
         "value": {
@@ -805,7 +805,7 @@
     }
   },
   "typography": {
-    "headline 01": {
+    "headline01": {
       "description": "Headline 01 Serif",
       "fontSize": {
         "type": "dimension",
@@ -852,7 +852,7 @@
         "value": "none"
       }
     },
-    "headlinesans 01": {
+    "headlinesans01": {
       "description": "HeadlineSans 01",
       "fontSize": {
         "type": "dimension",
@@ -899,7 +899,7 @@
         "value": "none"
       }
     },
-    "headline 02": {
+    "headline02": {
       "description": "Headline 02 Serif",
       "fontSize": {
         "type": "dimension",
@@ -946,7 +946,7 @@
         "value": "none"
       }
     },
-    "headline 03": {
+    "headline03": {
       "description": "Headline 03",
       "fontSize": {
         "type": "dimension",
@@ -993,7 +993,7 @@
         "value": "none"
       }
     },
-    "headlinesans 03": {
+    "headlinesans03": {
       "description": "HeadlineSans 03",
       "fontSize": {
         "type": "dimension",
@@ -1040,7 +1040,7 @@
         "value": "none"
       }
     },
-    "large body 01": {
+    "largebody01": {
       "description": "Large body 01",
       "fontSize": {
         "type": "dimension",
@@ -1087,7 +1087,7 @@
         "value": "none"
       }
     },
-    "large body serif 01": {
+    "largebodyserif01": {
       "description": "Large body serif 01",
       "fontSize": {
         "type": "dimension",
@@ -1134,7 +1134,7 @@
         "value": "none"
       }
     },
-    "regular body 01": {
+    "regularbody01": {
       "description": "Regular Body 01",
       "fontSize": {
         "type": "dimension",
@@ -1181,7 +1181,7 @@
         "value": "none"
       }
     },
-    "regular body serif 01": {
+    "regularbodyserif01": {
       "description": "Regular Body serif 01",
       "fontSize": {
         "type": "dimension",
@@ -1228,7 +1228,7 @@
         "value": "none"
       }
     },
-    "small body 02": {
+    "smallbody02": {
       "description": "Small Body 02",
       "fontSize": {
         "type": "dimension",
@@ -1275,7 +1275,7 @@
         "value": "none"
       }
     },
-    "small body serif 02": {
+    "smallbodyserif02": {
       "description": "Small Body serif 02",
       "fontSize": {
         "type": "dimension",
@@ -1322,7 +1322,7 @@
         "value": "none"
       }
     },
-    "mention text": {
+    "mentiontext": {
       "description": "Mention text",
       "fontSize": {
         "type": "dimension",
@@ -1369,7 +1369,7 @@
         "value": "uppercase"
       }
     },
-    "small nav 01": {
+    "smallnav01": {
       "description": "Navbar",
       "fontSize": {
         "type": "dimension",
@@ -1416,7 +1416,7 @@
         "value": "none"
       }
     },
-    "italic body 01": {
+    "italicbody01": {
       "description": "Italic/Bold Body 01",
       "fontSize": {
         "type": "dimension",
@@ -1463,7 +1463,7 @@
         "value": "none"
       }
     },
-    "italicbold body 01": {
+    "italicboldbody01": {
       "description": "ItalicBold Body 01",
       "fontSize": {
         "type": "dimension",
@@ -1510,7 +1510,7 @@
         "value": "none"
       }
     },
-    "bold body 01": {
+    "boldbody01": {
       "description": "Bold Body 01",
       "fontSize": {
         "type": "dimension",
@@ -1557,7 +1557,7 @@
         "value": "none"
       }
     },
-    "headline 04": {
+    "headline04": {
       "description": "Headline 04",
       "fontSize": {
         "type": "dimension",
@@ -1604,7 +1604,7 @@
         "value": "none"
       }
     },
-    "headlinesans 04": {
+    "headlinesans04": {
       "description": "HeadlineSans 04",
       "fontSize": {
         "type": "dimension",
@@ -1651,7 +1651,7 @@
         "value": "none"
       }
     },
-    "small body 02 bold": {
+    "smallbody02bold": {
       "fontSize": {
         "type": "dimension",
         "value": 14
@@ -1697,7 +1697,7 @@
         "value": "none"
       }
     },
-    "small body 02 bold underline": {
+    "smallbody2boldunderline": {
       "fontSize": {
         "type": "dimension",
         "value": 14
@@ -1743,7 +1743,7 @@
         "value": "none"
       }
     },
-    "small nav bold 01": {
+    "smallnavbold01": {
       "fontSize": {
         "type": "dimension",
         "value": 10
@@ -1789,7 +1789,7 @@
         "value": "uppercase"
       }
     },
-    "details 8": {
+    "details8": {
       "fontSize": {
         "type": "dimension",
         "value": 8
@@ -1836,7 +1836,7 @@
       }
     },
     "type": {
-      "heading-large": {
+      "headinglarge": {
         "description": "Headline 01",
         "fontSize": {
           "type": "dimension",
@@ -1883,7 +1883,7 @@
           "value": "none"
         }
       },
-      "heading-large-sans": {
+      "headinglargesans": {
         "description": "Headline Sans 01",
         "fontSize": {
           "type": "dimension",
@@ -1930,7 +1930,7 @@
           "value": "none"
         }
       },
-      "heading-medium": {
+      "headingmedium": {
         "description": "Headline 02",
         "fontSize": {
           "type": "dimension",
@@ -1977,7 +1977,7 @@
           "value": "none"
         }
       },
-      "heading-medium-sans": {
+      "headingmediumsans": {
         "description": "Headline Sans 02",
         "fontSize": {
           "type": "dimension",
@@ -2024,7 +2024,7 @@
           "value": "none"
         }
       },
-      "heading-small": {
+      "headingsmall": {
         "description": "Headline 03",
         "fontSize": {
           "type": "dimension",
@@ -2071,7 +2071,7 @@
           "value": "none"
         }
       },
-      "heading-small-sans": {
+      "headingsmallsans": {
         "description": "HeadlineSans 03",
         "fontSize": {
           "type": "dimension",
@@ -2118,7 +2118,7 @@
           "value": "none"
         }
       },
-      "body-large": {
+      "bodylarge": {
         "description": "Large body 01",
         "fontSize": {
           "type": "dimension",
@@ -2165,7 +2165,7 @@
           "value": "none"
         }
       },
-      "body-large-serif": {
+      "bodylargeserif": {
         "description": "Large body serif",
         "fontSize": {
           "type": "dimension",
@@ -2212,7 +2212,7 @@
           "value": "none"
         }
       },
-      "body-regular": {
+      "bodyregular": {
         "description": "Regular body 01",
         "fontSize": {
           "type": "dimension",
@@ -2259,7 +2259,7 @@
           "value": "none"
         }
       },
-      "body-small": {
+      "bodysmall": {
         "description": "Small body 02",
         "fontSize": {
           "type": "dimension",
@@ -2306,7 +2306,7 @@
           "value": "none"
         }
       },
-      "body-regular-serif": {
+      "bodyregularserif": {
         "description": "Regular body serif 01",
         "fontSize": {
           "type": "dimension",
@@ -2353,7 +2353,7 @@
           "value": "none"
         }
       },
-      "body-small-serif": {
+      "bodysmallserif": {
         "description": "Small body serif 02",
         "fontSize": {
           "type": "dimension",
@@ -2400,7 +2400,7 @@
           "value": "none"
         }
       },
-      "mention-text": {
+      "mentiontext": {
         "description": "MENTION TEXT",
         "fontSize": {
           "type": "dimension",
