@@ -1,9 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
-import 'app_typography.dart';
-import 'app_spacing.dart';
-import 'app_borders.dart';
 
 // Main theme configuration
 class AppTheme {

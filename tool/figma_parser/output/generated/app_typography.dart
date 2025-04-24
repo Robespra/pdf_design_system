@@ -45,19 +45,7 @@ class AppTypography {
   static const double xxxlSize = 64;
 
   // Line heights
-  static const double xxlLineHeight = 52;
 
-  static const double xlLineHeight = 40;
-
-  static const double lLineHeight = 32;
-
-  static const double mLineHeight = 24;
-
-  static const double sLineHeight = 20;
-
-  static const double xsLineHeight = 16;
-
-  static const double xxsLineHeight = 14;
 
   // Predefined text styles
   static const TextStyle headline1 = TextStyle(

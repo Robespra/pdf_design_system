@@ -1,363 +1,363 @@
 
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-  // Regular colors from the design system
-  class AppColors {
-    /// Pure black
-  static const Color neutral_base_black = Color(0xFF000000);
+// Regular colors from the design system
+class AppColors {
+  /// Pure black
+  static const Color NeutralBaseBlack = Color(0xFF000000);
 
-  static const Color neutral_grey_black_90 = Color(0xFF121211);
+  static const Color NeutralGreyBlack90 = Color(0xFF121211);
 
-  static const Color neutral_grey_black_80 = Color(0xFF2C2D2D);
+  static const Color NeutralGreyBlack80 = Color(0xFF2C2D2D);
 
-  static const Color neutral_grey_black_20 = Color(0xFF818281);
+  static const Color NeutralGreyBlack20 = Color(0xFF818281);
 
-  static const Color neutral_grey_black_00 = Color(0xFFC4C4C4);
+  static const Color NeutralGreyBlack00 = Color(0xFFC4C4C4);
 
-  static const Color neutral_base_white = Color(0xFFFFFFFF);
+  static const Color NeutralBaseWhite = Color(0xFFFFFFFF);
 
-  static const Color neutral_beige_base = Color(0xFFC6A669);
+  static const Color NeutralBeigeBase = Color(0xFFC6A669);
 
-  static const Color neutral_beige_shade_80 = Color(0xFFCFB582);
+  static const Color NeutralBeigeShade80 = Color(0xFFCFB582);
 
-  static const Color neutral_beige_shade_60 = Color(0xFFDBC59E);
+  static const Color NeutralBeigeShade60 = Color(0xFFDBC59E);
 
-  static const Color neutral_beige_shade_40 = Color(0xFFE6D7BA);
+  static const Color NeutralBeigeShade40 = Color(0xFFE6D7BA);
 
-  static const Color neutral_beige_shade_20 = Color(0xFFF1E8D7);
+  static const Color NeutralBeigeShade20 = Color(0xFFF1E8D7);
 
   /// Main brand red
-  static const Color brand_redPrimary = Color(0xFFCB1617);
+  static const Color BrandRedPrimary = Color(0xFFCB1617);
 
   /// 80% red
-  static const Color brand_primary_80 = Color(0xFFD65247);
+  static const Color BrandPrimary80 = Color(0xFFD65247);
 
   /// 60% red
-  static const Color brand_primary_60 = Color(0xFFE68276);
+  static const Color BrandPrimary60 = Color(0xFFE68276);
 
   /// 40% red
-  static const Color brand_primary_40 = Color(0xFFF2AEA3);
+  static const Color BrandPrimary40 = Color(0xFFF2AEA3);
 
   /// 20% red
-  static const Color brand_primary_20 = Color(0xFFFBDBD5);
+  static const Color BrandPrimary20 = Color(0xFFFBDBD5);
 
   /// Contrast color for primary
-  static const Color brand_primary_contrast = Color(0xFFFFFFFF);
+  static const Color BrandPrimaryContrast = Color(0xFFFFFFFF);
 
   /// Laiton/Beige base color
-  static const Color accent_laiton_base = Color(0xFFC6A669);
+  static const Color AccentLaitonBaseLaiton = Color(0xFFC6A669);
 
   /// 80% laiton
-  static const Color accent_laiton_shade_80 = Color(0xFFCFB582);
+  static const Color AccentLaitonLaitonShade80 = Color(0xFFCFB582);
 
   /// 60% laiton
-  static const Color accent_laiton_shade_60 = Color(0xFFDBC59E);
+  static const Color AccentLaitonLaitonShade60 = Color(0xFFDBC59E);
 
   /// 40% laiton
-  static const Color accent_laiton_shade_40 = Color(0xFFE6D7BA);
+  static const Color AccentLaitonLaitonShade40 = Color(0xFFE6D7BA);
 
   /// 40% laiton
-  static const Color accent_laiton_shade_20 = Color(0xFFF1E8D7);
+  static const Color AccentLaitonLaitonShade20 = Color(0xFFF1E8D7);
 
   /// 40% laiton
-  static const Color accent_laiton_contrast = Color(0xFFF1E8D7);
+  static const Color AccentLaitonLaitonContrast = Color(0xFFF1E8D7);
 
-  static const Color accent_Laitonjaune_base = Color(0xFFC0A669);
+  static const Color AccentLaitonJauneBaseLaitonJaune = Color(0xFFC0A669);
 
   /// 80% jaune
-  static const Color accent_Laitonjaune_shade_80 = Color(0xFFECCB57);
+  static const Color AccentLaitonJauneLaitonJauneShade80 = Color(0xFFECCB57);
 
   /// 60% jaune
-  static const Color accent_Laitonjaune_shade_60 = Color(0xFFF1D57E);
+  static const Color AccentLaitonJauneLaitonJauneShade60 = Color(0xFFF1D57E);
 
   /// 40% jaune
-  static const Color accent_Laitonjaune_shade_40 = Color(0xFFF6DE9F);
+  static const Color AccentLaitonJauneLaitonJauneShade40 = Color(0xFFF6DE9F);
 
   /// 20% jaune
-  static const Color accent_Laitonjaune_shade_20 = Color(0xFFFAE7BE);
+  static const Color AccentLaitonJauneLaitonJauneShade20 = Color(0xFFFAE7BE);
 
   /// contraste jaune
-  static const Color accent_Laitonjaune_contrast = Color(0xFFE8C328);
+  static const Color AccentLaitonJauneLaitonJauneContrast = Color(0xFFE8C328);
 
   /// Bleu base color
-  static const Color accent_bleu_base = Color(0xFF0B528D);
+  static const Color AccentBleuBleuBase = Color(0xFF0B528D);
 
   /// 80% bleu
-  static const Color accent_bleu_shade_80 = Color(0xFF3D70A2);
+  static const Color AccentBleuBleuDarker80 = Color(0xFF3D70A2);
 
   /// 60% bleu
-  static const Color accent_bleu_shade_60 = Color(0xFF7095B8);
+  static const Color AccentBleuBleuShade60 = Color(0xFF7095B8);
 
   /// 40% bleu
-  static const Color accent_bleu_shade_40 = Color(0xFFA0B9D3);
+  static const Color AccentBleuBleuShade40 = Color(0xFFA0B9D3);
 
   /// 20% bleu
-  static const Color accent_bleu_shade_20 = Color(0xFFD3DFEB);
+  static const Color AccentBleuBleuShade20 = Color(0xFFD3DFEB);
 
   /// Contrast color for bleu
-  static const Color accent_bleu_contrast = Color(0xFFFFFFFF);
+  static const Color AccentBleucontrast = Color(0xFFFFFFFF);
 
   /// Jaune/Beige 02 base
-  static const Color accent_jauneBeige_base = Color(0xFFE0C332);
+  static const Color AccentJauneBeigeBaseJauneBeige = Color(0xFFE0C332);
 
   /// Jaune/Beige 02 base
-  static const Color accent_jauneBeige_shade_80 = Color(0xFFECC637);
+  static const Color AccentJauneBeigeJauneBeigeShade80 = Color(0xFFECC637);
 
   /// Jaune/Beige 02 base
-  static const Color accent_jauneBeige_shade_60 = Color(0xFFF1D57E);
+  static const Color AccentJauneBeigeJauneBeigeShade60 = Color(0xFFF1D57E);
 
   /// 40% jaune/beige
-  static const Color accent_jauneBeige_shade_40 = Color(0xFFF6E5AF);
+  static const Color AccentJauneBeigeJauneBeigeShade40 = Color(0xFFF6E5AF);
 
   /// 20% jaune/beige
-  static const Color accent_jauneBeige_shade_20 = Color(0xFFFAF3D9);
+  static const Color AccentJauneBeigeJauneBeigeShade20 = Color(0xFFFAF3D9);
 
   /// contrast
-  static const Color accent_jauneBeige_contrast = Color(0xFFFFEFD7);
+  static const Color AccentJauneBeigeJauneBeigeContrast = Color(0xFFFFEFD7);
 
   /// Promo & Success green base
-  static const Color accent_promoSuccess_base = Color(0xFF009A58);
+  static const Color AccentPromoSuccessBasePromoSuccess = Color(0xFF009A58);
 
   /// 80% promo green
-  static const Color accent_promoSuccess_shade_80 = Color(0xFF48BF73);
+  static const Color AccentPromoSuccessPromoSuccessShade80 = Color(0xFF48BF73);
 
   /// 60% promo green
-  static const Color accent_promoSuccess_shade_60 = Color(0xFF78D594);
+  static const Color AccentPromoSuccessPromoSuccessShade60 = Color(0xFF78D594);
 
   /// 40% promo green
-  static const Color accent_promoSuccess_shade_40 = Color(0xFFA2CCB8);
+  static const Color AccentPromoSuccessPromoSuccessShade40 = Color(0xFFA2CCB8);
 
   /// 20% promo green
-  static const Color accent_promoSuccess_shade_20 = Color(0xFFCCE4D8);
+  static const Color AccentPromoSuccessPromoSuccessShade20 = Color(0xFFCCE4D8);
 
   /// Contrast color for promo green
-  static const Color accent_promoSuccess_contrast = Color(0xFFF0F9F6);
+  static const Color AccentPromoSuccessPromoSuccessContrast = Color(0xFFF0F9F6);
 
-  static const Color neutral_beige_contast = Color(0xFFFBF7F0);
+  static const Color NeutralBeigeContrast = Color(0xFFFBF7F0);
 
   /// Bleu base color darker 20%
-  static const Color accent_bleu_darker_20 = Color(0xFF09406D);
+  static const Color AccentBleuBleuDarker20 = Color(0xFF09406D);
 
   /// Bleu base color darker 40%
-  static const Color accent_bleu_darker_40 = Color(0xFF072D4C);
+  static const Color AccentBleuBleuDarker40 = Color(0xFF072D4C);
 
   /// Bleu base color darker 40%
-  static const Color accent_bleu_darker_60 = Color(0xFF051E33);
+  static const Color AccentBleuBleuDarker60 = Color(0xFF051E33);
 
-  static const Color neutral_grey_black_40 = Color(0xFF464747);
-
-  /// Laiton/Beige base color
-  static const Color accent_laiton_darker_20 = Color(0xFFA18756);
+  static const Color NeutralGreyBlack40 = Color(0xFF464747);
 
   /// Laiton/Beige base color
-  static const Color accent_laiton_darker_40 = Color(0xFF75633F);
+  static const Color AccentLaitonLaitonDarker20 = Color(0xFFA18756);
 
   /// Laiton/Beige base color
-  static const Color accent_laiton_darker_60 = Color(0xFF3B311F);
+  static const Color AccentLaitonLaitonDarker40 = Color(0xFF75633F);
 
-  static const Color neutral_grey_black_60 = Color(0xFF464747);
+  /// Laiton/Beige base color
+  static const Color AccentLaitonLaitonDarker60 = Color(0xFF3B311F);
 
-  static const Color neutral_shadow_dark_100 = Color(0xFF121211);
+  static const Color NeutralGreyBlack60 = Color(0xFF464747);
 
-  static const Color neutral_shadow_dark_90 = Color(0xE5121211);
+  static const Color NeutralShadowDark100 = Color(0xFF121211);
 
-  static const Color neutral_shadow_dark_80 = Color(0xCC121211);
+  static const Color NeutralShadowDark90 = Color(0xE5121211);
 
-  static const Color neutral_shadow_dark_70 = Color(0xB2121211);
+  static const Color NeutralShadowDark80 = Color(0xCC121211);
 
-  static const Color neutral_shadow_dark_60 = Color(0x99121211);
+  static const Color NeutralShadowDark70 = Color(0xB2121211);
 
-  static const Color neutral_shadow_dark_50 = Color(0x80121211);
+  static const Color NeutralShadowDark60 = Color(0x99121211);
 
-  static const Color neutral_shadow_dark_40 = Color(0x66121211);
+  static const Color NeutralShadowDark50 = Color(0x80121211);
 
-  static const Color neutral_shadow_dark_30 = Color(0x4D121211);
+  static const Color NeutralShadowDark40 = Color(0x66121211);
 
-  static const Color neutral_shadow_dark_20 = Color(0x33121211);
+  static const Color NeutralShadowDark30 = Color(0x4D121211);
 
-  static const Color neutral_shadow_dark_10 = Color(0x1A121211);
+  static const Color NeutralShadowDark20 = Color(0x33121211);
 
-  static const Color neutral_shadow_light_100 = Color(0xFF121211);
+  static const Color NeutralShadowDark10 = Color(0x1A121211);
 
-  static const Color neutral_shadow_light_90 = Color(0xE5464747);
+  static const Color NeutralShadowLight100 = Color(0xFF121211);
 
-  static const Color neutral_shadow_light_80 = Color(0xCC464747);
+  static const Color NeutralShadowLight90 = Color(0xE5464747);
 
-  static const Color neutral_shadow_light_60 = Color(0x99464747);
+  static const Color NeutralShadowLight80 = Color(0xCC464747);
 
-  static const Color neutral_shadow_light_50 = Color(0x80464747);
+  static const Color NeutralShadowLight60 = Color(0x99464747);
 
-  static const Color neutral_shadow_light_40 = Color(0x80464747);
+  static const Color NeutralShadowLight50 = Color(0x80464747);
 
-  static const Color neutral_shadow_light_30 = Color(0x4D464747);
+  static const Color NeutralShadowLight40 = Color(0x80464747);
 
-  static const Color neutral_shadow_light_20 = Color(0x33464747);
+  static const Color NeutralShadowLight30 = Color(0x4D464747);
 
-  static const Color neutral_shadow_light_10 = Color(0x1A464747);
+  static const Color NeutralShadowLight20 = Color(0x33464747);
 
-  static const Color neutral_grey_black_10 = Color(0xFFF1EEEA);
+  static const Color NeutralShadowLight10 = Color(0x1A464747);
 
-  static const Color neutral_beige_shade_10 = Color(0xFFF6F6F6);
+  static const Color NeutralGreyBlack10 = Color(0xFFF1EEEA);
 
-  static const Color semantic_shadow_--shadowM = Color(0x80464747);
+  static const Color NeutralBeigeShade10 = Color(0xFFF6F6F6);
 
-  static const Color neutral_grey_black_70 = Color(0xFF1C1C1B);
+  static const Color ShadowShadowM = Color(0x80464747);
 
-  static const Color semantic_shadow_--shadowS = Color(0x4D464747);
+  static const Color NeutralGreyBlack70 = Color(0xFF1C1C1B);
 
-  static const Color semantic_shadow_--shadowXS = Color(0x33464747);
+  static const Color ShadowShadowS = Color(0x4D464747);
 
-  static const Color semantic_shadow_--shadowL = Color(0xB2464747);
+  static const Color ShadowShadowXS = Color(0x33464747);
 
-  static const Color semantic_shadow_--shadowXL = Color(0xE5464747);
+  static const Color ShadowShadowL = Color(0xB2464747);
 
-    AppColors._();
-  }
+  static const Color ShadowShadowXL = Color(0xE5464747);
 
-  // Theme-aware semantic colors
-  class AppThemeColors extends ThemeExtension<AppThemeColors> {
-    final Color text;
-  final Color background;
-  final Color sucessPromo;
-  final Color warningYellow;
-  final Color backgroundCards;
-  final Color backgroundNav;
-  final Color brandRed;
-  final Color basicContrastText;
-  final Color colorlogoLine;
-  final Color backgroundNavStronger;
-  final Color grey;
-  final Color greyDarker;
-  final Color contrastOpacityS;
-  final Color contrastOpacityM;
-  final Color basicContrastOpposite;
-  final Color nightShow;
+  AppColors._();
+}
 
-    const AppThemeColors({
-      required this.text,
-    required this.background,
-    required this.sucessPromo,
-    required this.warningYellow,
-    required this.backgroundCards,
-    required this.backgroundNav,
-    required this.brandRed,
-    required this.basicContrastText,
-    required this.colorlogoLine,
-    required this.backgroundNavStronger,
-    required this.grey,
-    required this.greyDarker,
-    required this.contrastOpacityS,
-    required this.contrastOpacityM,
-    required this.basicContrastOpposite,
-    required this.nightShow,
-    });
+// Theme-aware semantic colors
+class AppThemeColors extends ThemeExtension<AppThemeColors> {
+  final Color SemanticText;
+  final Color SemanticBackground;
+  final Color SemanticSucessPromo;
+  final Color SemanticWarningYellow;
+  final Color SemanticBackgroundCards;
+  final Color SemanticBackgroundNav;
+  final Color SemanticBrandRed;
+  final Color SemanticBasicContrastText;
+  final Color SemanticColorlogoLine;
+  final Color SemanticBackgroundNavStronger;
+  final Color SemanticGrey;
+  final Color SemanticGreyDarker;
+  final Color SemanticContrastOpacityS;
+  final Color SemanticContrastOpacityM;
+  final Color SemanticBasicContrastOpposite;
+  final Color SemanticNightShow;
 
-    // Light theme values
-    static AppThemeColors get light => const AppThemeColors(
-      text: Color(0xFF3B311F),
-    background: Color(0xFFFBF7F0),
-    sucessPromo: Color(0xFF009A58),
-    warningYellow: Color(0xFFE8C328),
-    backgroundCards: Color(0xFFFFFFFF),
-    backgroundNav: Color(0xFFF6F6F6),
-    brandRed: Color(0xFFB40020),
-    basicContrastText: Color(0xFF1D1D1B),
-    colorlogoLine: Color(0xFFB40020),
-    backgroundNavStronger: Color(0xFFF1EFEF),
-    grey: Color(0xFF616161),
-    greyDarker: Color(0xFF1F1F1F),
-    contrastOpacityS: Color(0x1A000000),
-    contrastOpacityM: Color(0x40000000),
-    basicContrastOpposite: Color(0xFFFFFFFF),
-    nightShow: Color(0xFF09406D),
+  const AppThemeColors({
+    required this.SemanticText,
+    required this.SemanticBackground,
+    required this.SemanticSucessPromo,
+    required this.SemanticWarningYellow,
+    required this.SemanticBackgroundCards,
+    required this.SemanticBackgroundNav,
+    required this.SemanticBrandRed,
+    required this.SemanticBasicContrastText,
+    required this.SemanticColorlogoLine,
+    required this.SemanticBackgroundNavStronger,
+    required this.SemanticGrey,
+    required this.SemanticGreyDarker,
+    required this.SemanticContrastOpacityS,
+    required this.SemanticContrastOpacityM,
+    required this.SemanticBasicContrastOpposite,
+    required this.SemanticNightShow,
+  });
+
+  // Light theme values
+  static AppThemeColors get light => const AppThemeColors(
+    SemanticText: Color(0xFF3B311F),
+    SemanticBackground: Color(0xFFFBF7F0),
+    SemanticSucessPromo: Color(0xFF009A58),
+    SemanticWarningYellow: Color(0xFFE8C328),
+    SemanticBackgroundCards: Color(0xFFFFFFFF),
+    SemanticBackgroundNav: Color(0xFFF6F6F6),
+    SemanticBrandRed: Color(0xFFB40020),
+    SemanticBasicContrastText: Color(0xFF1D1D1B),
+    SemanticColorlogoLine: Color(0xFFB40020),
+    SemanticBackgroundNavStronger: Color(0xFFF1EFEF),
+    SemanticGrey: Color(0xFF616161),
+    SemanticGreyDarker: Color(0xFF1F1F1F),
+    SemanticContrastOpacityS: Color(0x1A000000),
+    SemanticContrastOpacityM: Color(0x40000000),
+    SemanticBasicContrastOpposite: Color(0xFFFFFFFF),
+    SemanticNightShow: Color(0xFF09406D),
+  );
+
+  // Dark theme values
+  static AppThemeColors get dark => const AppThemeColors(
+    SemanticText: Color(0xFFF6F6F6),
+    SemanticBackground: Color(0xFF1C1C1B),
+    SemanticSucessPromo: Color(0xFF48BF73),
+    SemanticWarningYellow: Color(0xFFECCB57),
+    SemanticBackgroundCards: Color(0xFF2C2D2D),
+    SemanticBackgroundNav: Color(0xFF2C2D2D),
+    SemanticBrandRed: Color(0xFFCB1617),
+    SemanticBasicContrastText: Color(0xFFFFFFFF),
+    SemanticColorlogoLine: Color(0xFFFFFFFF),
+    SemanticBackgroundNavStronger: Color(0xFF474949),
+    SemanticGrey: Color(0xFFA3A3A3),
+    SemanticGreyDarker: Color(0xFF515151),
+    SemanticContrastOpacityS: Color(0x1AFFFFFF),
+    SemanticContrastOpacityM: Color(0x40FFFFFF),
+    SemanticBasicContrastOpposite: Color(0xFF1D1D1D),
+    SemanticNightShow: Color(0xFF3D70A2),
+  );
+
+  @override
+  AppThemeColors copyWith({
+    Color? SemanticText,
+    Color? SemanticBackground,
+    Color? SemanticSucessPromo,
+    Color? SemanticWarningYellow,
+    Color? SemanticBackgroundCards,
+    Color? SemanticBackgroundNav,
+    Color? SemanticBrandRed,
+    Color? SemanticBasicContrastText,
+    Color? SemanticColorlogoLine,
+    Color? SemanticBackgroundNavStronger,
+    Color? SemanticGrey,
+    Color? SemanticGreyDarker,
+    Color? SemanticContrastOpacityS,
+    Color? SemanticContrastOpacityM,
+    Color? SemanticBasicContrastOpposite,
+    Color? SemanticNightShow,
+  }) {
+    return AppThemeColors(
+      SemanticText: SemanticText ?? this.SemanticText,
+      SemanticBackground: SemanticBackground ?? this.SemanticBackground,
+      SemanticSucessPromo: SemanticSucessPromo ?? this.SemanticSucessPromo,
+      SemanticWarningYellow: SemanticWarningYellow ?? this.SemanticWarningYellow,
+      SemanticBackgroundCards: SemanticBackgroundCards ?? this.SemanticBackgroundCards,
+      SemanticBackgroundNav: SemanticBackgroundNav ?? this.SemanticBackgroundNav,
+      SemanticBrandRed: SemanticBrandRed ?? this.SemanticBrandRed,
+      SemanticBasicContrastText: SemanticBasicContrastText ?? this.SemanticBasicContrastText,
+      SemanticColorlogoLine: SemanticColorlogoLine ?? this.SemanticColorlogoLine,
+      SemanticBackgroundNavStronger: SemanticBackgroundNavStronger ?? this.SemanticBackgroundNavStronger,
+      SemanticGrey: SemanticGrey ?? this.SemanticGrey,
+      SemanticGreyDarker: SemanticGreyDarker ?? this.SemanticGreyDarker,
+      SemanticContrastOpacityS: SemanticContrastOpacityS ?? this.SemanticContrastOpacityS,
+      SemanticContrastOpacityM: SemanticContrastOpacityM ?? this.SemanticContrastOpacityM,
+      SemanticBasicContrastOpposite: SemanticBasicContrastOpposite ?? this.SemanticBasicContrastOpposite,
+      SemanticNightShow: SemanticNightShow ?? this.SemanticNightShow,
     );
+  }
 
-    // Dark theme values
-    static AppThemeColors get dark => const AppThemeColors(
-      text: Color(0xFFF6F6F6),
-    background: Color(0xFF1C1C1B),
-    sucessPromo: Color(0xFF48BF73),
-    warningYellow: Color(0xFFECCB57),
-    backgroundCards: Color(0xFF2C2D2D),
-    backgroundNav: Color(0xFF2C2D2D),
-    brandRed: Color(0xFFCB1617),
-    basicContrastText: Color(0xFFFFFFFF),
-    colorlogoLine: Color(0xFFFFFFFF),
-    backgroundNavStronger: Color(0xFF474949),
-    grey: Color(0xFFA3A3A3),
-    greyDarker: Color(0xFF515151),
-    contrastOpacityS: Color(0x1AFFFFFF),
-    contrastOpacityM: Color(0x40FFFFFF),
-    basicContrastOpposite: Color(0xFF1D1D1D),
-    nightShow: Color(0xFF3D70A2),
+  @override
+  ThemeExtension<AppThemeColors> lerp(ThemeExtension<AppThemeColors>? other, double t) {
+    if (other is! AppThemeColors) {
+      return this;
+    }
+    return AppThemeColors(
+      SemanticText: Color.lerp(SemanticText, other.SemanticText, t)!,
+      SemanticBackground: Color.lerp(SemanticBackground, other.SemanticBackground, t)!,
+      SemanticSucessPromo: Color.lerp(SemanticSucessPromo, other.SemanticSucessPromo, t)!,
+      SemanticWarningYellow: Color.lerp(SemanticWarningYellow, other.SemanticWarningYellow, t)!,
+      SemanticBackgroundCards: Color.lerp(SemanticBackgroundCards, other.SemanticBackgroundCards, t)!,
+      SemanticBackgroundNav: Color.lerp(SemanticBackgroundNav, other.SemanticBackgroundNav, t)!,
+      SemanticBrandRed: Color.lerp(SemanticBrandRed, other.SemanticBrandRed, t)!,
+      SemanticBasicContrastText: Color.lerp(SemanticBasicContrastText, other.SemanticBasicContrastText, t)!,
+      SemanticColorlogoLine: Color.lerp(SemanticColorlogoLine, other.SemanticColorlogoLine, t)!,
+      SemanticBackgroundNavStronger: Color.lerp(SemanticBackgroundNavStronger, other.SemanticBackgroundNavStronger, t)!,
+      SemanticGrey: Color.lerp(SemanticGrey, other.SemanticGrey, t)!,
+      SemanticGreyDarker: Color.lerp(SemanticGreyDarker, other.SemanticGreyDarker, t)!,
+      SemanticContrastOpacityS: Color.lerp(SemanticContrastOpacityS, other.SemanticContrastOpacityS, t)!,
+      SemanticContrastOpacityM: Color.lerp(SemanticContrastOpacityM, other.SemanticContrastOpacityM, t)!,
+      SemanticBasicContrastOpposite: Color.lerp(SemanticBasicContrastOpposite, other.SemanticBasicContrastOpposite, t)!,
+      SemanticNightShow: Color.lerp(SemanticNightShow, other.SemanticNightShow, t)!,
     );
-
-    @override
-    AppThemeColors copyWith({
-      Color? text,
-    Color? background,
-    Color? sucessPromo,
-    Color? warningYellow,
-    Color? backgroundCards,
-    Color? backgroundNav,
-    Color? brandRed,
-    Color? basicContrastText,
-    Color? colorlogoLine,
-    Color? backgroundNavStronger,
-    Color? grey,
-    Color? greyDarker,
-    Color? contrastOpacityS,
-    Color? contrastOpacityM,
-    Color? basicContrastOpposite,
-    Color? nightShow,
-    }) {
-      return AppThemeColors(
-        text: text ?? this.text,
-      background: background ?? this.background,
-      sucessPromo: sucessPromo ?? this.sucessPromo,
-      warningYellow: warningYellow ?? this.warningYellow,
-      backgroundCards: backgroundCards ?? this.backgroundCards,
-      backgroundNav: backgroundNav ?? this.backgroundNav,
-      brandRed: brandRed ?? this.brandRed,
-      basicContrastText: basicContrastText ?? this.basicContrastText,
-      colorlogoLine: colorlogoLine ?? this.colorlogoLine,
-      backgroundNavStronger: backgroundNavStronger ?? this.backgroundNavStronger,
-      grey: grey ?? this.grey,
-      greyDarker: greyDarker ?? this.greyDarker,
-      contrastOpacityS: contrastOpacityS ?? this.contrastOpacityS,
-      contrastOpacityM: contrastOpacityM ?? this.contrastOpacityM,
-      basicContrastOpposite: basicContrastOpposite ?? this.basicContrastOpposite,
-      nightShow: nightShow ?? this.nightShow,
-      );
-    }
-
-    @override
-    ThemeExtension<AppThemeColors> lerp(ThemeExtension<AppThemeColors>? other, double t) {
-      if (other is! AppThemeColors) {
-        return this;
-      }
-      return AppThemeColors(
-        text: Color.lerp(text, other.text, t)!,
-      background: Color.lerp(background, other.background, t)!,
-      sucessPromo: Color.lerp(sucessPromo, other.sucessPromo, t)!,
-      warningYellow: Color.lerp(warningYellow, other.warningYellow, t)!,
-      backgroundCards: Color.lerp(backgroundCards, other.backgroundCards, t)!,
-      backgroundNav: Color.lerp(backgroundNav, other.backgroundNav, t)!,
-      brandRed: Color.lerp(brandRed, other.brandRed, t)!,
-      basicContrastText: Color.lerp(basicContrastText, other.basicContrastText, t)!,
-      colorlogoLine: Color.lerp(colorlogoLine, other.colorlogoLine, t)!,
-      backgroundNavStronger: Color.lerp(backgroundNavStronger, other.backgroundNavStronger, t)!,
-      grey: Color.lerp(grey, other.grey, t)!,
-      greyDarker: Color.lerp(greyDarker, other.greyDarker, t)!,
-      contrastOpacityS: Color.lerp(contrastOpacityS, other.contrastOpacityS, t)!,
-      contrastOpacityM: Color.lerp(contrastOpacityM, other.contrastOpacityM, t)!,
-      basicContrastOpposite: Color.lerp(basicContrastOpposite, other.basicContrastOpposite, t)!,
-      nightShow: Color.lerp(nightShow, other.nightShow, t)!,
-      );
-    }
   }
+}
 
-  // Extension for easier theme color access
-  extension BuildContextThemeExtension on BuildContext {
-    AppThemeColors get colors => Theme.of(this).extension<AppThemeColors>()!;
-  }
+// Extension for easier theme color access
+extension BuildContextThemeExtension on BuildContext {
+  AppThemeColors get colors => Theme.of(this).extension<AppThemeColors>()!;
+}

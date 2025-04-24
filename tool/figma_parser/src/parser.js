@@ -1,9 +1,5 @@
 const fs = require('fs-extra');
 const path = require('path');
-const colorsTemplate = require('./templates/colors.template');
-const typographyTemplate = require('./templates/typography.template');
-const spacingTemplate = require('./templates/spacing.template');
-const borderTemplate = require('./templates/border.template');
 
 // Path constants
 const INPUT_FILE = path.join(__dirname, '../input/figma-variables.json');
@@ -71,6 +67,27 @@ function getResolvedValue(variable, modeId, figmaVariables) {
   return null;
 }
 
+// Format variable name for Dart - preserving original capitalization
+function formatVariableName(name) {
+  // For regular colors: Remove the "Color/" prefix
+  if (name.startsWith('Color/')) {
+    return name.substring(6).replace(/\//g, '');
+  }
+
+  // For semantic colors: Remove "Semantic/Color/" prefix
+  if (name.startsWith('Semantic/Color/')) {
+    return name.substring(15).replace(/\//g, '');
+  }
+
+  // For other types: Remove the type prefix and slash
+  const firstSlash = name.indexOf('/');
+  if (firstSlash !== -1) {
+    return name.substring(firstSlash + 1).replace(/\//g, '');
+  }
+
+  return name;
+}
+
 // Main function
 async function main() {
   try {
@@ -93,9 +110,6 @@ async function main() {
     // Create data structures for each variable type
     const semanticColors = [];
     const regularColors = [];
-    const typographyStyles = [];
-    const spacingValues = [];
-    const borderValues = [];
 
     // Process variables
     figmaVariables.variables.forEach(variable => {
@@ -103,125 +117,114 @@ async function main() {
       const type = variable.type;
 
       // Process semantic colors
-      if (name.startsWith('semantic/color/--')) {
-        const colorName = name.replace('semantic/color/--', '');
+      if (name.startsWith('Semantic/Color/')) {
+        // Format semantic name
+        const dartVariableName = formatVariableName(name);
+
+        // Get light and dark values
         const lightValue = getResolvedValue(variable, lightModeId, figmaVariables);
         const darkValue = getResolvedValue(variable, darkModeId, figmaVariables);
 
         if (lightValue && darkValue) {
           semanticColors.push({
-            name: colorName,
-            lightValue,
-            darkValue,
+            name: dartVariableName,
+            lightValue: lightValue,
+            darkValue: darkValue,
             description: variable.description || ''
           });
-          console.log(`Processed semantic color: ${colorName}`);
+          console.log(`Processed semantic color: ${dartVariableName}`);
         }
       }
       // Process regular colors (non-semantic)
-      else if (name.startsWith('color/') || type === 'COLOR') {
-        // Normalize the name by removing 'color/' prefix and replacing '/' with '_'
-        const colorName = name.replace('color/', '').replace(/\//g, '_');
+      else if (name.startsWith('Color/') || type === 'COLOR') {
         const value = getResolvedValue(variable, lightModeId, figmaVariables);
 
         if (value) {
+          const dartVariableName = formatVariableName(name);
           regularColors.push({
-            name: colorName,
+            name: dartVariableName,
             value,
             description: variable.description || ''
           });
-          console.log(`Processed regular color: ${colorName}`);
-        }
-      }
-
-      // Process typography
-      else if (name.startsWith('typography/')) {
-        const parts = name.split('/');
-        const category = parts[1];
-        const typeName = parts[2];
-
-        if (['family', 'weight', 'size', 'line-height'].includes(category)) {
-          const value = getResolvedValue(variable, lightModeId, figmaVariables);
-
-          typographyStyles.push({
-            name: typeName,
-            category,
-            value,
-            description: variable.description || ''
-          });
-          console.log(`Processed typography: ${category}/${typeName}`);
-        }
-      }
-
-      // Process spacing
-      else if (name.startsWith('spacing/')) {
-        const spacingName = name.replace('spacing/', '');
-        const value = getResolvedValue(variable, lightModeId, figmaVariables);
-
-        if (value !== null) {
-          spacingValues.push({
-            name: spacingName,
-            value,
-            description: variable.description || ''
-          });
-          console.log(`Processed spacing: ${spacingName}`);
-        }
-      }
-
-      // Process borders
-      else if (name.startsWith('border/')) {
-        const borderName = name.replace('border/', '');
-        const value = getResolvedValue(variable, lightModeId, figmaVariables);
-
-        if (value !== null) {
-          borderValues.push({
-            name: borderName,
-            value,
-            description: variable.description || ''
-          });
-          console.log(`Processed border: ${borderName}`);
+          console.log(`Processed regular color: ${dartVariableName}`);
         }
       }
     });
+
+    // Create a custom template function
+    const generateColorsDart = (regularColors, semanticColors) => {
+      return `
+import 'package:flutter/material.dart';
+
+// Regular colors from the design system
+class AppColors {
+${regularColors.map(color => {
+  const comment = color.description ? `  /// ${color.description}\n` : '';
+  return `${comment}  static const Color ${color.name} = Color(0x${color.value});`;
+}).join('\n\n')}
+
+  AppColors._();
+}
+
+// Theme-aware semantic colors
+class AppThemeColors extends ThemeExtension<AppThemeColors> {
+${semanticColors.map(color => `  final Color ${color.name};`).join('\n')}
+
+  const AppThemeColors({
+${semanticColors.map(color => `    required this.${color.name},`).join('\n')}
+  });
+
+  // Light theme values
+  static AppThemeColors get light => const AppThemeColors(
+${semanticColors.map(color => `    ${color.name}: Color(0x${color.lightValue}),`).join('\n')}
+  );
+
+  // Dark theme values
+  static AppThemeColors get dark => const AppThemeColors(
+${semanticColors.map(color => `    ${color.name}: Color(0x${color.darkValue}),`).join('\n')}
+  );
+
+  @override
+  AppThemeColors copyWith({
+${semanticColors.map(color => `    Color? ${color.name},`).join('\n')}
+  }) {
+    return AppThemeColors(
+${semanticColors.map(color => `      ${color.name}: ${color.name} ?? this.${color.name},`).join('\n')}
+    );
+  }
+
+  @override
+  ThemeExtension<AppThemeColors> lerp(ThemeExtension<AppThemeColors>? other, double t) {
+    if (other is! AppThemeColors) {
+      return this;
+    }
+    return AppThemeColors(
+${semanticColors.map(color => `      ${color.name}: Color.lerp(${color.name}, other.${color.name}, t)!,`).join('\n')}
+    );
+  }
+}
+
+// Extension for easier theme color access
+extension BuildContextThemeExtension on BuildContext {
+  AppThemeColors get colors => Theme.of(this).extension<AppThemeColors>()!;
+}
+`;
+    };
 
     // Create output directory
     await fs.ensureDir(OUTPUT_DIR);
 
     // Generate colors.dart
     if (semanticColors.length > 0 || regularColors.length > 0) {
-      const colorsDartCode = colorsTemplate(semanticColors, regularColors);
+      const colorsDartCode = generateColorsDart(regularColors, semanticColors);
       await fs.writeFile(path.join(OUTPUT_DIR, 'app_colors.dart'), colorsDartCode);
       console.log(`Generated app_colors.dart with ${semanticColors.length} semantic colors and ${regularColors.length} regular colors`);
-    }
-
-    // Generate typography.dart
-    if (typographyStyles.length > 0) {
-      const typographyDartCode = typographyTemplate(typographyStyles);
-      await fs.writeFile(path.join(OUTPUT_DIR, 'app_typography.dart'), typographyDartCode);
-      console.log(`Generated app_typography.dart with ${typographyStyles.length} typography styles`);
-    }
-
-    // Generate spacing.dart
-    if (spacingValues.length > 0) {
-      const spacingDartCode = spacingTemplate(spacingValues);
-      await fs.writeFile(path.join(OUTPUT_DIR, 'app_spacing.dart'), spacingDartCode);
-      console.log(`Generated app_spacing.dart with ${spacingValues.length} spacing values`);
-    }
-
-    // Generate borders.dart
-    if (borderValues.length > 0) {
-      const borderDartCode = borderTemplate(borderValues);
-      await fs.writeFile(path.join(OUTPUT_DIR, 'app_borders.dart'), borderDartCode);
-      console.log(`Generated app_borders.dart with ${borderValues.length} border values`);
     }
 
     // Generate theme.dart (main file that imports others)
     const themeDartCode = `
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
-import 'app_typography.dart';
-import 'app_spacing.dart';
-import 'app_borders.dart';
 
 // Main theme configuration
 class AppTheme {
