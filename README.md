@@ -12,7 +12,7 @@ dependencies:
     git:
       url: https://github.com/Robespra/pdf_design_system.git
       ref: main  # or specific tag/commit
-
+```
 
 ## Steps to use
 
@@ -26,12 +26,14 @@ Use Design Tokens plugin to export styles. Place figma-styles.json into tool/fig
 
 ### 3/ Run parser
 
-```npm
+```bash
 npm run parse
+```
 
 ### 4/ Output dart files are generated in output/generated
-All variables names and values are aligned with Figma. Enjoy !
 
+All variables names and values are aligned with Figma. Enjoy!
 
 ## Next step
+
 Use Figma API (FIGMA_API_KEY, FIGMA_FILE_KEY)
