@@ -1,99 +1,50 @@
-module.exports = (typographyStyles) => {
-  // Group typography values by category
-  const families = typographyStyles.filter(t => t.category === 'family');
-  const weights = typographyStyles.filter(t => t.category === 'weight');
-  const sizes = typographyStyles.filter(t => t.category === 'size');
-  const lineHeights = typographyStyles.filter(t => t.category === 'line-height');
-
+module.exports = (textStyles) => {
   return `
 import 'package:flutter/material.dart';
 
-/// Typography styles for the PDF design system
-class AppTypography {
-  // Font families
-${families.map(f => {
-    let comment = f.description ? `  /// ${f.description}\n` : '';
-    return `${comment}  static const String ${f.name.toLowerCase()}Family = "${f.value}";`;
-  }).join('\n\n')}
+// Text styles from the design system
+class AppTextStyles {
+${textStyles.map(style => {
+  const comment = style.description ? `  /// ${style.description}\n` : '';
 
-  // Font weights
-${weights.map(w => {
-    let comment = w.description ? `  /// ${w.description}\n` : '';
-    let weightValue;
+  // Handle FontWeight
+  let fontWeight = 'FontWeight.w400';
+  if (style.fontWeight === 700) {
+    fontWeight = 'FontWeight.w700';
+  } else if (style.fontWeight === 600) {
+    fontWeight = 'FontWeight.w600';
+  } else if (style.fontWeight === 500) {
+    fontWeight = 'FontWeight.w500';
+  } else if (style.fontWeight === 300) {
+    fontWeight = 'FontWeight.w300';
+  }
 
-    // Map weight names to Flutter FontWeight values
-    switch(w.value.toLowerCase()) {
-      case 'thin': weightValue = 'FontWeight.w100'; break;
-      case 'extralight': weightValue = 'FontWeight.w200'; break;
-      case 'light': weightValue = 'FontWeight.w300'; break;
-      case 'regular': weightValue = 'FontWeight.w400'; break;
-      case 'medium': weightValue = 'FontWeight.w500'; break;
-      case 'semibold': weightValue = 'FontWeight.w600'; break;
-      case 'bold': weightValue = 'FontWeight.w700'; break;
-      case 'extrabold': weightValue = 'FontWeight.w800'; break;
-      case 'black': weightValue = 'FontWeight.w900'; break;
-      default: weightValue = 'FontWeight.w400';
-    }
+  // Handle FontStyle
+  let fontStyle = 'FontStyle.normal';
+  if (style.fontStyle === 'italic') {
+    fontStyle = 'FontStyle.italic';
+  }
 
-    return `${comment}  static const FontWeight ${w.name.toLowerCase()}Weight = ${weightValue};`;
-  }).join('\n\n')}
+  // Handle textDecoration
+  let textDecoration = 'TextDecoration.none';
+  if (style.textDecoration === 'underline') {
+    textDecoration = 'TextDecoration.underline';
+  } else if (style.textDecoration === 'line-through') {
+    textDecoration = 'TextDecoration.lineThrough';
+  }
 
-  // Font sizes
-${sizes.map(s => {
-    let comment = s.description ? `  /// ${s.description}\n` : '';
-    return `${comment}  static const double ${s.name.toLowerCase()}Size = ${s.value};`;
-  }).join('\n\n')}
+  return `${comment}  static const TextStyle ${style.name.replace(/[^a-zA-Z0-9]/g, '_')} = TextStyle(
+    fontFamily: '${style.fontFamily}',
+    fontSize: ${style.fontSize},
+    fontWeight: ${fontWeight},
+    fontStyle: ${fontStyle},
+    letterSpacing: ${style.letterSpacing},
+    height: ${style.lineHeight / style.fontSize}, // lineHeight divided by fontSize for Flutter
+    decoration: ${textDecoration},
+  );`;
+}).join('\n\n')}
 
-  // Line heights
-${lineHeights.map(lh => {
-    let comment = lh.description ? `  /// ${lh.description}\n` : '';
-    return `${comment}  static const double ${lh.name.toLowerCase()}LineHeight = ${lh.value};`;
-  }).join('\n\n')}
-
-  // Predefined text styles
-  static const TextStyle headline1 = TextStyle(
-    fontFamily: headingsFamily,
-    fontWeight: boldWeight,
-    fontSize: xxlSize,
-    height: xxlLineHeight / xxlSize,
-  );
-
-  static const TextStyle headline2 = TextStyle(
-    fontFamily: headingsFamily,
-    fontWeight: boldWeight,
-    fontSize: xlSize,
-    height: xlLineHeight / xlSize,
-  );
-
-  static const TextStyle headline3 = TextStyle(
-    fontFamily: headingsFamily,
-    fontWeight: mediumWeight,
-    fontSize: lSize,
-    height: lLineHeight / lSize,
-  );
-
-  static const TextStyle bodyLarge = TextStyle(
-    fontFamily: bodyFamily,
-    fontWeight: regularWeight,
-    fontSize: mSize,
-    height: mLineHeight / mSize,
-  );
-
-  static const TextStyle bodyMedium = TextStyle(
-    fontFamily: bodyFamily,
-    fontWeight: regularWeight,
-    fontSize: sSize,
-    height: sLineHeight / sSize,
-  );
-
-  static const TextStyle bodySmall = TextStyle(
-    fontFamily: bodyFamily,
-    fontWeight: regularWeight,
-    fontSize: xsSize,
-    height: xsLineHeight / xsSize,
-  );
-
-  AppTypography._();
+  AppTextStyles._();
 }
 `;
 };

@@ -216,118 +216,28 @@ class AppColors {
 
 // Theme-aware semantic colors
 class AppThemeColors extends ThemeExtension<AppThemeColors> {
-  final Color SemanticText;
-  final Color SemanticBackground;
-  final Color SemanticSucessPromo;
-  final Color SemanticWarningYellow;
-  final Color SemanticBackgroundCards;
-  final Color SemanticBackgroundNav;
-  final Color SemanticBrandRed;
-  final Color SemanticBasicContrastText;
-  final Color SemanticColorlogoLine;
-  final Color SemanticBackgroundNavStronger;
-  final Color SemanticGrey;
-  final Color SemanticGreyDarker;
-  final Color SemanticContrastOpacityS;
-  final Color SemanticContrastOpacityM;
-  final Color SemanticBasicContrastOpposite;
-  final Color SemanticNightShow;
+
 
   const AppThemeColors({
-    required this.SemanticText,
-    required this.SemanticBackground,
-    required this.SemanticSucessPromo,
-    required this.SemanticWarningYellow,
-    required this.SemanticBackgroundCards,
-    required this.SemanticBackgroundNav,
-    required this.SemanticBrandRed,
-    required this.SemanticBasicContrastText,
-    required this.SemanticColorlogoLine,
-    required this.SemanticBackgroundNavStronger,
-    required this.SemanticGrey,
-    required this.SemanticGreyDarker,
-    required this.SemanticContrastOpacityS,
-    required this.SemanticContrastOpacityM,
-    required this.SemanticBasicContrastOpposite,
-    required this.SemanticNightShow,
+
   });
 
   // Light theme values
   static AppThemeColors get light => const AppThemeColors(
-    SemanticText: Color(0xFF3B311F),
-    SemanticBackground: Color(0xFFFBF7F0),
-    SemanticSucessPromo: Color(0xFF009A58),
-    SemanticWarningYellow: Color(0xFFE8C328),
-    SemanticBackgroundCards: Color(0xFFFFFFFF),
-    SemanticBackgroundNav: Color(0xFFF6F6F6),
-    SemanticBrandRed: Color(0xFFB40020),
-    SemanticBasicContrastText: Color(0xFF1D1D1B),
-    SemanticColorlogoLine: Color(0xFFB40020),
-    SemanticBackgroundNavStronger: Color(0xFFF1EFEF),
-    SemanticGrey: Color(0xFF616161),
-    SemanticGreyDarker: Color(0xFF1F1F1F),
-    SemanticContrastOpacityS: Color(0x1A000000),
-    SemanticContrastOpacityM: Color(0x40000000),
-    SemanticBasicContrastOpposite: Color(0xFFFFFFFF),
-    SemanticNightShow: Color(0xFF09406D),
+
   );
 
   // Dark theme values
   static AppThemeColors get dark => const AppThemeColors(
-    SemanticText: Color(0xFFF6F6F6),
-    SemanticBackground: Color(0xFF1C1C1B),
-    SemanticSucessPromo: Color(0xFF48BF73),
-    SemanticWarningYellow: Color(0xFFECCB57),
-    SemanticBackgroundCards: Color(0xFF2C2D2D),
-    SemanticBackgroundNav: Color(0xFF2C2D2D),
-    SemanticBrandRed: Color(0xFFCB1617),
-    SemanticBasicContrastText: Color(0xFFFFFFFF),
-    SemanticColorlogoLine: Color(0xFFFFFFFF),
-    SemanticBackgroundNavStronger: Color(0xFF474949),
-    SemanticGrey: Color(0xFFA3A3A3),
-    SemanticGreyDarker: Color(0xFF515151),
-    SemanticContrastOpacityS: Color(0x1AFFFFFF),
-    SemanticContrastOpacityM: Color(0x40FFFFFF),
-    SemanticBasicContrastOpposite: Color(0xFF1D1D1D),
-    SemanticNightShow: Color(0xFF3D70A2),
+
   );
 
   @override
   AppThemeColors copyWith({
-    Color? SemanticText,
-    Color? SemanticBackground,
-    Color? SemanticSucessPromo,
-    Color? SemanticWarningYellow,
-    Color? SemanticBackgroundCards,
-    Color? SemanticBackgroundNav,
-    Color? SemanticBrandRed,
-    Color? SemanticBasicContrastText,
-    Color? SemanticColorlogoLine,
-    Color? SemanticBackgroundNavStronger,
-    Color? SemanticGrey,
-    Color? SemanticGreyDarker,
-    Color? SemanticContrastOpacityS,
-    Color? SemanticContrastOpacityM,
-    Color? SemanticBasicContrastOpposite,
-    Color? SemanticNightShow,
+
   }) {
     return AppThemeColors(
-      SemanticText: SemanticText ?? this.SemanticText,
-      SemanticBackground: SemanticBackground ?? this.SemanticBackground,
-      SemanticSucessPromo: SemanticSucessPromo ?? this.SemanticSucessPromo,
-      SemanticWarningYellow: SemanticWarningYellow ?? this.SemanticWarningYellow,
-      SemanticBackgroundCards: SemanticBackgroundCards ?? this.SemanticBackgroundCards,
-      SemanticBackgroundNav: SemanticBackgroundNav ?? this.SemanticBackgroundNav,
-      SemanticBrandRed: SemanticBrandRed ?? this.SemanticBrandRed,
-      SemanticBasicContrastText: SemanticBasicContrastText ?? this.SemanticBasicContrastText,
-      SemanticColorlogoLine: SemanticColorlogoLine ?? this.SemanticColorlogoLine,
-      SemanticBackgroundNavStronger: SemanticBackgroundNavStronger ?? this.SemanticBackgroundNavStronger,
-      SemanticGrey: SemanticGrey ?? this.SemanticGrey,
-      SemanticGreyDarker: SemanticGreyDarker ?? this.SemanticGreyDarker,
-      SemanticContrastOpacityS: SemanticContrastOpacityS ?? this.SemanticContrastOpacityS,
-      SemanticContrastOpacityM: SemanticContrastOpacityM ?? this.SemanticContrastOpacityM,
-      SemanticBasicContrastOpposite: SemanticBasicContrastOpposite ?? this.SemanticBasicContrastOpposite,
-      SemanticNightShow: SemanticNightShow ?? this.SemanticNightShow,
+
     );
   }
 
@@ -337,22 +247,7 @@ class AppThemeColors extends ThemeExtension<AppThemeColors> {
       return this;
     }
     return AppThemeColors(
-      SemanticText: Color.lerp(SemanticText, other.SemanticText, t)!,
-      SemanticBackground: Color.lerp(SemanticBackground, other.SemanticBackground, t)!,
-      SemanticSucessPromo: Color.lerp(SemanticSucessPromo, other.SemanticSucessPromo, t)!,
-      SemanticWarningYellow: Color.lerp(SemanticWarningYellow, other.SemanticWarningYellow, t)!,
-      SemanticBackgroundCards: Color.lerp(SemanticBackgroundCards, other.SemanticBackgroundCards, t)!,
-      SemanticBackgroundNav: Color.lerp(SemanticBackgroundNav, other.SemanticBackgroundNav, t)!,
-      SemanticBrandRed: Color.lerp(SemanticBrandRed, other.SemanticBrandRed, t)!,
-      SemanticBasicContrastText: Color.lerp(SemanticBasicContrastText, other.SemanticBasicContrastText, t)!,
-      SemanticColorlogoLine: Color.lerp(SemanticColorlogoLine, other.SemanticColorlogoLine, t)!,
-      SemanticBackgroundNavStronger: Color.lerp(SemanticBackgroundNavStronger, other.SemanticBackgroundNavStronger, t)!,
-      SemanticGrey: Color.lerp(SemanticGrey, other.SemanticGrey, t)!,
-      SemanticGreyDarker: Color.lerp(SemanticGreyDarker, other.SemanticGreyDarker, t)!,
-      SemanticContrastOpacityS: Color.lerp(SemanticContrastOpacityS, other.SemanticContrastOpacityS, t)!,
-      SemanticContrastOpacityM: Color.lerp(SemanticContrastOpacityM, other.SemanticContrastOpacityM, t)!,
-      SemanticBasicContrastOpposite: Color.lerp(SemanticBasicContrastOpposite, other.SemanticBasicContrastOpposite, t)!,
-      SemanticNightShow: Color.lerp(SemanticNightShow, other.SemanticNightShow, t)!,
+
     );
   }
 }
