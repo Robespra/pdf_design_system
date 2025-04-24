@@ -31,3 +31,7 @@ npm run parse
 
 ### 4/ Output dart files are generated in output/generated
 All variables names and values are aligned with Figma. Enjoy !
+
+
+## Next step
+Use Figma API (FIGMA_API_KEY, FIGMA_FILE_KEY)
