@@ -251,6 +251,16 @@ class AppTextStyles {
     decoration: TextDecoration.none,
   );
 
+  static const TextStyle headlinesans02 = TextStyle(
+    fontFamily: 'Arial',
+    fontSize: 36,
+    fontWeight: FontWeight.w700,
+    fontStyle: FontStyle.normal,
+    letterSpacing: 0,
+    height: 1, // lineHeight divided by fontSize for Flutter
+    decoration: TextDecoration.none,
+  );
+
   /// Headline 01
   static const TextStyle headinglarge = TextStyle(
     fontFamily: 'Georgia',
