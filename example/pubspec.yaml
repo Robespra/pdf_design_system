@@ -1,16 +1,17 @@
 name: pdf_design_system_example
-description: Example app for PDF design system
+description: Example app for PDF Design System
 publish_to: 'none'
 
+version: 1.0.0+1
+
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
   pdf_design_system:
-    path: ../
+    path: ..
 
 dev_dependencies:
   flutter_test:

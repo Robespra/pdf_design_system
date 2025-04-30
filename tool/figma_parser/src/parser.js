@@ -4,7 +4,7 @@ const path = require('path');
 // Path constants
 const VARIABLES_FILE = path.join(__dirname, '../input/figma-variables.json');
 const STYLES_FILE = path.join(__dirname, '../input/figma-styles.json');
-const OUTPUT_DIR = path.join(__dirname, '../output/generated');
+const OUTPUT_DIR = path.join(__dirname, '../../../lib/src');
 
 // Import templates
 const colorsTemplate = require('../src/templates/colors.template');
